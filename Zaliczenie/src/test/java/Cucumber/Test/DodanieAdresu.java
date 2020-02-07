@@ -15,13 +15,9 @@ public class DodanieAdresu {
     public String keyword;
     @Given("^Loguje się do aplikacji$")
     public void logujeSięDoAplikacji() {
-        // Skonfiguruj sterownik przeglądarki
         System.setProperty("webdriver.gecko.driver", "src/main/resources/drivers/geckodriver");
-        // Uruchom nowy egzemplarz przeglądarki Firefox
         driver = new FirefoxDriver();
-        // Zmaksymalizuj okno przeglądarki
         driver.manage().window().maximize();
-        // Przejdź do strony
         driver.get("https://prod-kurs.coderslab.pl/index.php");
         driver.findElement(By.xpath("//div[@id='_desktop_user_info']/div/a/i")).click();
         driver.findElement(By.name("email")).click();

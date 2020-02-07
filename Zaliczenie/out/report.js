@@ -1,113 +1,173 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("dodanieAdresu.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/Cucumber/Feature/zakupSwetra.feature");
 formatter.feature({
   "line": 1,
-  "name": "Dodanie Adresu",
+  "name": "Zakup Swetra",
   "description": "",
-  "id": "dodanie-adresu",
+  "id": "zakup-swetra",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Zalogowanie do aplikacji i dodanie adresu",
+  "line": 2,
+  "name": "Zakup swetra w sklepie prod-kurs.coderslab.pl przez zarejestrowanego uzytkownika",
   "description": "",
-  "id": "dodanie-adresu;zalogowanie-do-aplikacji-i-dodanie-adresu",
+  "id": "zakup-swetra;zakup-swetra-w-sklepie-prod-kurs.coderslab.pl-przez-zarejestrowanego-uzytkownika",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 5,
-  "name": "Loguje się do aplikacji",
+  "line": 3,
+  "name": "Loguje sie do aplikacji przez uzycie email i hasla",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
-  "name": "Jako zalogowany uzytkownik klikam w odnosnik Adreses",
+  "line": 4,
+  "name": "Wyszukuje  Hummingbird Printed Sweater",
   "keyword": "When "
 });
 formatter.step({
+  "line": 5,
+  "name": "Wybieram rozmiar M",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 6,
+  "name": "Dodaje piec produktow do koszyka",
+  "keyword": "And "
+});
+formatter.step({
   "line": 7,
-  "name": "Wpisuje ulicje w sekcje adress",
+  "name": "Przechodze do checkout",
   "keyword": "And "
 });
 formatter.step({
   "line": 8,
-  "name": "wpisuję kod pocztowy w sekcje zipPostal",
+  "name": "Potwierdzam swoj adres",
   "keyword": "And "
 });
 formatter.step({
   "line": 9,
-  "name": "Wpisuje City w s",
+  "name": "Wybieram rodzaj przesylki",
   "keyword": "And "
 });
 formatter.step({
   "line": 10,
-  "name": "Wybieram Country",
+  "name": "Wybieram metode platnosci",
   "keyword": "And "
 });
 formatter.step({
   "line": 11,
-  "name": "Klikam zapisz",
+  "name": "Zaznaczam I agree therms of service",
   "keyword": "And "
 });
 formatter.step({
   "line": 12,
-  "name": "Adres jest dodany close browser",
+  "name": "Klikam order with an obligation to pay",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 14,
+  "name": "Wyswietla sie moje zamowienie z informacja: Your order is confirmed.",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 15,
+  "name": "Robie screenshot z zamowieniem",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "Przegladarka zostaje zamknieta",
+  "keyword": "And "
+});
 formatter.match({
-  "location": "DodanieAdresu.logujeSięDoAplikacji()"
+  "location": "ZakupSwetra.logujeSieDoAplikacji()"
 });
 formatter.result({
-  "duration": 13392337921,
+  "duration": 12304423886,
   "status": "passed"
 });
 formatter.match({
-  "location": "DodanieAdresu.jakoZalogowanyUzytkownikKlikamWOdnosnikAdreses()"
+  "location": "ZakupSwetra.wyszukujeHummingbirdPrintedSweater()"
 });
 formatter.result({
-  "duration": 544659497,
+  "duration": 1184108830,
   "status": "passed"
 });
 formatter.match({
-  "location": "DodanieAdresu.wpisujeUlicjeWSekcjeAdress()"
+  "location": "ZakupSwetra.wybieramRozmiarM()"
 });
 formatter.result({
-  "duration": 371273392,
+  "duration": 1265474697,
   "status": "passed"
 });
 formatter.match({
-  "location": "DodanieAdresu.wpisujęKodPocztowyWSekcjeZipPostal()"
+  "location": "ZakupSwetra.dodajePiecProduktowDoKoszyka()"
 });
 formatter.result({
-  "duration": 308153286,
+  "duration": 1426580125,
   "status": "passed"
 });
 formatter.match({
-  "location": "DodanieAdresu.wpisujeCityWS()"
+  "location": "ZakupSwetra.przechodzeDoCheckout()"
 });
 formatter.result({
-  "duration": 315968606,
+  "duration": 1200182436,
   "status": "passed"
 });
 formatter.match({
-  "location": "DodanieAdresu.wybieramCountry()"
+  "location": "ZakupSwetra.potwierdzamSwojAdres()"
 });
 formatter.result({
-  "duration": 294640445,
+  "duration": 895384817,
   "status": "passed"
 });
 formatter.match({
-  "location": "DodanieAdresu.klikamZapisz()"
+  "location": "ZakupSwetra.wybieramRodzajPrzesylki()"
 });
 formatter.result({
-  "duration": 537059789,
+  "duration": 1026539087,
   "status": "passed"
 });
 formatter.match({
-  "location": "DodanieAdresu.adresJestDodanyCloseBrowser()"
+  "location": "ZakupSwetra.wybieramMetodePlatnosci()"
 });
 formatter.result({
-  "duration": 2813268613,
+  "duration": 275967742,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ZakupSwetra.zaznaczamIAgreeThermsOfService()"
+});
+formatter.result({
+  "duration": 281848937,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ZakupSwetra.klikamOrderWithAnObligationToPay()"
+});
+formatter.result({
+  "duration": 855542163,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ZakupSwetra.wyswietlaSieMojeZamowienieZInformacjaYourOrderIsConfirmed()"
+});
+formatter.result({
+  "duration": 72954,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ZakupSwetra.robieScreenshotZZamowieniem()"
+});
+formatter.result({
+  "duration": 182881536,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ZakupSwetra.przegladarkaZostajeZamknieta()"
+});
+formatter.result({
+  "duration": 3961269103,
   "status": "passed"
 });
 });
